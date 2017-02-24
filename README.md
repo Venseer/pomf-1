@@ -25,7 +25,7 @@ Pomf is a simple file uploading and sharing platform.
 
 ### Demo
 
-See the real world example at [try.pantsu.cat](https://try.pantsu.cat/).
+See the real world example at [sugoi.vidyagam.es](https://sugoi.vidyagam.es/).
 
 ## Requirements
 
@@ -72,7 +72,7 @@ After this, the pomf site is now compressed and set up inside `dist/`, or, if sp
 ## Configuring
 
 Front-end related settings, such as the name of the site, and maximum allowable
-file size, are found in `templates/site_variables.json`.  Changes made here will
+file size, are found in `dist.json`.  Changes made here will
 only take effect after rebuilding the site pages.  This may be done by running
 `make` from the root of the site directory.
 
@@ -148,7 +148,7 @@ define('POMF_DB_PASS', '[stuff]'); ---> define('POMF_DB_PASS', null);
 ```
 Then, run `make DESTDIR=/path/to/main_site/testing_dir` (note the *testing_dir* component) to rebuild the website, and copy it into place, in a new testing subdirectory.
 
-Now, navigate to this subdirectory in your web browser, e.g. https://try.pantsu.cat/testing_dir, and verify that uploading works fine.  If so, excellent!  You may rerun `make DESTDIR=/path/to/main_site` to update your main site.
+Now, navigate to this subdirectory in your web browser, e.g. http://example.com/testing_dir, and verify that uploading works fine.  If so, excellent!  You may rerun `make DESTDIR=/path/to/main_site` to update your main site.
 
 All done! You may disable or uninstall MySQL if you wish.
 
@@ -157,7 +157,6 @@ All done! You may disable or uninstall MySQL if you wish.
 The Pomf community gathers on IRC. You can also email the maintainer for help.
 
 - IRC (users): `#pomfret` on Rizon (`irc.rizon.net`)
-- Email: <hostmaster@pantsu.cat>
 
 ## Contributing
 
